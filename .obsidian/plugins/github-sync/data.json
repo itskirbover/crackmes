@@ -1,0 +1,9 @@
+{
+  "remoteURL": "https://github.com/itskirbover/crackmes.git",
+  "gitLocation": "/usr/bin/git",
+  "syncinterval": 0,
+  "isSyncOnLoad": true,
+  "checkStatusOnLoad": true,
+  "noticeLevel": "ALL",
+  "showSyncSuccessNotice": true
+}
