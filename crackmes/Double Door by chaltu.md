@@ -14,7 +14,7 @@ Goal 1 asks us to reverse engineer the binary to find the main password required
 
 First, we look into `main()`:
 
-![[doubledoor-1.png|513]]
+![](doubledoor-1.png)
 
 The program gives the user 3 attempts to log in. After reading the input, it calls `check_password(Buffer)` (name assigned by IDA), which we then can look into:
 
