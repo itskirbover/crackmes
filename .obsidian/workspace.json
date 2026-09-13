@@ -185,11 +185,13 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "github-sync:Sync with Remote": false
     }
   },
-  "active": "1bfb0a2d65222149",
+  "active": "81c3b7c053e5434d",
   "lastOpenFiles": [
+    "LICENSE",
     "assets/doubledoor-5.png",
     "assets/doubledoor-1.png",
     "assets/doubledoor-2.png",
