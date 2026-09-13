@@ -16,18 +16,18 @@ First, we look into `main()`:
 
 ![[doubledoor-1.png|513]]
 
-The program gives the user 3 attempts to log in. After reading the input, it calls `check_password(Buffer)` (name assigned by IDA), which we then can look into.
+The program gives the user 3 attempts to log in. After reading the input, it calls `check_password(Buffer)` (name assigned by IDA), which we then can look into:
 
 ![[doubledoor-2.png]]
 
-Here we have a basic base-64 string, `Y3JhY2ttZTIwMjQ=`. We can use an external base-64 decoder, such as [base64decode.org](https://www.base64decode.org/) to convert this into a regular string.
+Here we have a basic base-64 string, `Y3JhY2ttZTIwMjQ=`. We can use an external base-64 decoder, such as [base64decode.org](https://www.base64decode.org/) to convert this into a regular string:
 
 ![[doubledoor-3.png|656]]
 
-The password is `crackme2024`. We can test this by running the program.
+The password is `crackme2024`. We can test this by running the program:
 ![[doubledoor-4.png]]
 
-This is Goal 1 complete. We can now continue to Goal 2 -- find a hidden backdoor string left behind by the developer. We already saw this in the `check_password()` function.
+This is Goal 1 complete. We can now continue to Goal 2 -- find a hidden backdoor string left behind by the developer. We already saw this in the `check_password()` function:
 
 ![[doubledoor-2.png]]
 
@@ -35,7 +35,7 @@ Notice the second-last line:
 `return !strcmp(a1, Str2) || strstr(a1, "hack") != nullptr;`
 The first argument, `!strcmp(a1, Str2)` is not important (it checks if our password is correct). The second argument, `strstr(a1, "hack")` checks if the word `hack` appeared in the password and returns true if it has.  This would mean that any password containing the word `hack` would be treated as correct.
 
-We can test this by running the program.
+We can test this by running the program:
 
 ![[doubledoor-5.png]]
 

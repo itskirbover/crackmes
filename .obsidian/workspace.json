@@ -99,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "crackmes/Double Door by chaltu.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,6 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "crackmes/Double Door by chaltu.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -159,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md",
+                "file": "crackmes/Double Door by chaltu.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -187,11 +189,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "81c3b7c053e5434d",
+  "active": "1bfb0a2d65222149",
   "lastOpenFiles": [
+    "Untitled.md",
     "crackmes",
     "crackmes/Double Door by chaltu.md",
-    "Untitled.md",
     "LICENSE",
     "assets/doubledoor-5.png",
     "assets/doubledoor-1.png",
